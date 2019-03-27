@@ -1,0 +1,25 @@
+% Формат А4, 14pt
+\documentclass[a4paper,14pt]{extreport}
+\input{setup}              	% Упрощённые настройки шаблона 
+\input{packages}  			% Пакеты общие 
+\input{dispackages}         % Пакеты для рабочей программы
+\input{userpackages}        % Пакеты для специфических пользовательских задач
+\input{preamblenames}       % Переопределение именований
+
+\input{data}      			% Основные сведения
+\input{styles}    			% Общие стили 
+\input{disstyles}           % Стили для рабочей программы
+\input{userstyles}          % Стили для специфических пользовательских задач
+
+\begin{document}
+
+% Структура рабочей программы
+\include{title}           	% Титульный лист
+\include{contents}        	% Оглавление
+\include{main}            	% Основная часть
+\include{signing}     		% Подписи
+
+\include{appendixtitle}   	% Титульный лист ФОС
+\include{appendix}        	% Приложение А
+
+\end{document} 
